@@ -1,0 +1,6 @@
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ShapeLibrary\bin\Debug\ShapeLibrary.dll
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ShapeLibrary\bin\Debug\ShapeLibrary.pdb
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ShapeLibrary\obj\Debug\ShapeLibrary.csprojAssemblyReference.cache
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ShapeLibrary\obj\Debug\ShapeLibrary.csproj.CoreCompileInputs.cache
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ShapeLibrary\obj\Debug\ShapeLibrary.dll
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ShapeLibrary\obj\Debug\ShapeLibrary.pdb

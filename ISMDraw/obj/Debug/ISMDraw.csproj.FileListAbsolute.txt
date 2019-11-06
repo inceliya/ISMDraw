@@ -1,0 +1,13 @@
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ISMDraw\bin\Debug\ISMDraw.exe.config
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ISMDraw\bin\Debug\ISMDraw.exe
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ISMDraw\bin\Debug\ISMDraw.pdb
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ISMDraw\obj\Debug\ISMDraw.csprojAssemblyReference.cache
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ISMDraw\obj\Debug\ISMDraw.Drawing.resources
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ISMDraw\obj\Debug\ISMDraw.Properties.Resources.resources
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ISMDraw\obj\Debug\ISMDraw.csproj.GenerateResource.cache
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ISMDraw\obj\Debug\ISMDraw.csproj.CoreCompileInputs.cache
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ISMDraw\obj\Debug\ISMDraw.exe
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ISMDraw\obj\Debug\ISMDraw.pdb
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ISMDraw\bin\Debug\ShapeLibrary.dll
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ISMDraw\bin\Debug\ShapeLibrary.pdb
+D:\Users10\Александр\Desktop\ISM\ISMDraw\ISMDraw\obj\Debug\ISMDraw.csproj.CopyComplete
