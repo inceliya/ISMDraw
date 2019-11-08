@@ -26,5 +26,10 @@ namespace ShapeLibrary
             Pen pen = new Pen(Color, Size);
             graphics.DrawEllipse(pen, X-1, Y-1, 2, 2);
         }
+        public override void Moov(float dx, float dy)
+        {
+            X += dx;
+            Y += dy;
+        }
     }
 }

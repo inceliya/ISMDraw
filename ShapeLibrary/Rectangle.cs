@@ -42,5 +42,10 @@ namespace ShapeLibrary
 
             graphics.DrawRectangle(pen, X, Y, Width, Height);
         }
+
+        public override void Moov(float dx, float dy)
+        {
+            base.Moov(dx, dy);
+        }
     }
 }

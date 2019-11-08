@@ -47,5 +47,11 @@ namespace ShapeLibrary
             Pen pen = new Pen(Color, Size);
             graphics.DrawLine(pen, X, Y, X1, Y1);
         }
+        public override void Moov(float dx, float dy)
+        {
+            base.Moov(dx, dy);
+            X1 += dx;
+            Y1 += dy;
+        }
     }
 }

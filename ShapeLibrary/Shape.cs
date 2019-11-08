@@ -70,5 +70,8 @@ namespace ShapeLibrary
             return Size;
         }
         public abstract void Draw(Graphics graphics);
+
+        public abstract void Moov(float dx, float dy);
+        
     }
 }
