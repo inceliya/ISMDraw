@@ -16,6 +16,14 @@ namespace ISMDraw
     {
         List <Shape> shapes = new List<Shape>();
         Random rnd = new Random();
+        Color color;
+        Graphics graphics;
+        int DrawX;
+        int DrawY;
+        int DrawX1;
+        int DrawY1;
+        bool MClick = false;
+
         public Drawing()
         {
             InitializeComponent();
@@ -26,7 +34,7 @@ namespace ISMDraw
         }
         private void ButtonDraw_Click(object sender, EventArgs e)
         {
-            Graphics graphics = pictureBox.CreateGraphics();
+            graphics = pictureBox.CreateGraphics();
             shapes = new List<Shape>();
             SetColor(out Color color);
             for (int i = 0; i < trackBar.Value; i++)
@@ -37,9 +45,9 @@ namespace ISMDraw
             pictureBox.Refresh();
         }
 
+        byte size = 6;
         private void ShapesList(int shape, Color color)
         {
-            byte size = 6;
                 int x = rnd.Next(0, pictureBox.Width);
                 int y = rnd.Next(0, pictureBox.Height);
             switch (shape)
@@ -76,7 +84,6 @@ namespace ISMDraw
         private void ButtonClean_Click(object sender, EventArgs e)
         {
             shapes.Clear();
-            pictureBox.Image = null;
             pictureBox.Refresh();
         }
 
@@ -116,10 +123,6 @@ namespace ISMDraw
             pictureBox.Refresh();
         }
 
-        private void ComboBoxShape_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
         private void ButtonMoov_Click(object sender, EventArgs e)
         {
             
@@ -128,24 +131,60 @@ namespace ISMDraw
  
         }
 
-        private void PictureBox_MouseClick(object sender, MouseEventArgs e)
+        private void Drawing_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
-            {
-                //do something here
-            }
+           
+        }
+
+        private void Drawing_MouseMove(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void Drawing_MouseUp(object sender, MouseEventArgs e)
+        {
+           
         }
 
         private void PictureBox_MouseDown(object sender, MouseEventArgs e)
         {
-            int x = 0, y = 0, x1 = 100, y1 = 100;
-            if (e.Button == MouseButtons.Right)
-            {
-                x = Cursor.Position.X;
-                y = Cursor.Position.Y;
-            }
-            shapes.Add(new Line(x, y, Color.Red, 8, x1, y1));
+            MClick = true;
+            DrawX1 = e.X;
+            DrawY1 = e.Y;
+
+        }
+
+        private void PictureBox_MouseUp(object sender, MouseEventArgs e)
+        {
+            MClick = false;
+            //SetColor(out Color color);
+            //shapes.Add(new Line(DrawX, DrawY, color, size, DrawX1, DrawY1));
             pictureBox.Refresh();
+            label1.Text = Convert.ToString(shapes.Count);
+        }
+
+        private void PictureBox_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (MClick)
+            {
+                DrawX = DrawX1;
+                DrawY = DrawY1;
+                DrawX1 = e.X;
+                DrawY1 = e.Y;
+                shapes.Add(new Line(DrawX, DrawY, color, size, DrawX1, DrawY1));
+                pictureBox.Refresh();
+                //shapes.RemoveAt(shapes.Count - 1);
+            }
+
+        }
+
+        private void ButtonColor_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                color = colorDialog1.Color;
+            }
+            else color = Color.FromArgb(rnd.Next(0, 256), rnd.Next(0, 256), rnd.Next(0, 256));
         }
     }
 }

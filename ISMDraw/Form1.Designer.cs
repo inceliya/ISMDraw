@@ -45,6 +45,8 @@
             this.labelMoovX = new System.Windows.Forms.Label();
             this.labelMoovY = new System.Windows.Forms.Label();
             this.buttonMoov = new System.Windows.Forms.Button();
+            this.buttonColor = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownY)).BeginInit();
@@ -63,8 +65,9 @@
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
             this.pictureBox.Paint += new System.Windows.Forms.PaintEventHandler(this.PictureBox_Paint);
-            this.pictureBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PictureBox_MouseClick);
             this.pictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PictureBox_MouseDown);
+            this.pictureBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PictureBox_MouseMove);
+            this.pictureBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PictureBox_MouseUp);
             // 
             // labelInfo
             // 
@@ -131,6 +134,7 @@
             // 
             // comboBoxShape
             // 
+            this.comboBoxShape.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxShape.FormattingEnabled = true;
             this.comboBoxShape.Items.AddRange(new object[] {
             "Точка",
@@ -142,8 +146,6 @@
             this.comboBoxShape.Name = "comboBoxShape";
             this.comboBoxShape.Size = new System.Drawing.Size(175, 21);
             this.comboBoxShape.TabIndex = 7;
-            this.comboBoxShape.Text = "Выбирете фигуру ";
-            this.comboBoxShape.SelectedIndexChanged += new System.EventHandler(this.ComboBoxShape_SelectedIndexChanged);
             // 
             // buttonAdd
             // 
@@ -220,12 +222,34 @@
             this.buttonMoov.UseVisualStyleBackColor = true;
             this.buttonMoov.Click += new System.EventHandler(this.ButtonMoov_Click);
             // 
+            // buttonColor
+            // 
+            this.buttonColor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonColor.Location = new System.Drawing.Point(12, 347);
+            this.buttonColor.Name = "buttonColor";
+            this.buttonColor.Size = new System.Drawing.Size(175, 23);
+            this.buttonColor.TabIndex = 15;
+            this.buttonColor.Text = "Выбрать цвет для рисования";
+            this.buttonColor.UseVisualStyleBackColor = true;
+            this.buttonColor.Click += new System.EventHandler(this.ButtonColor_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 160);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "label1";
+            // 
             // Drawing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(691, 420);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.buttonColor);
             this.Controls.Add(this.buttonMoov);
             this.Controls.Add(this.labelMoovY);
             this.Controls.Add(this.labelMoovX);
@@ -247,6 +271,9 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "Рисование";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Drawing_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Drawing_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Drawing_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownY)).EndInit();
@@ -274,6 +301,8 @@
         private System.Windows.Forms.Label labelMoovX;
         private System.Windows.Forms.Label labelMoovY;
         private System.Windows.Forms.Button buttonMoov;
+        private System.Windows.Forms.Button buttonColor;
+        private System.Windows.Forms.Label label1;
     }
 }
 

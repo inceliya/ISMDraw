@@ -1,0 +1,13 @@
+D:\Users10\Александр\Desktop\ISM\ISMDraw\Peint\bin\Debug\Peint.exe.config
+D:\Users10\Александр\Desktop\ISM\ISMDraw\Peint\bin\Debug\Peint.exe
+D:\Users10\Александр\Desktop\ISM\ISMDraw\Peint\bin\Debug\Peint.pdb
+D:\Users10\Александр\Desktop\ISM\ISMDraw\Peint\obj\Debug\Peint.csprojAssemblyReference.cache
+D:\Users10\Александр\Desktop\ISM\ISMDraw\Peint\obj\Debug\Peint.Form1.resources
+D:\Users10\Александр\Desktop\ISM\ISMDraw\Peint\obj\Debug\Peint.Properties.Resources.resources
+D:\Users10\Александр\Desktop\ISM\ISMDraw\Peint\obj\Debug\Peint.csproj.GenerateResource.cache
+D:\Users10\Александр\Desktop\ISM\ISMDraw\Peint\obj\Debug\Peint.csproj.CoreCompileInputs.cache
+D:\Users10\Александр\Desktop\ISM\ISMDraw\Peint\obj\Debug\Peint.exe
+D:\Users10\Александр\Desktop\ISM\ISMDraw\Peint\obj\Debug\Peint.pdb
+D:\Users10\Александр\Desktop\ISM\ISMDraw\Peint\bin\Debug\ShapeLibrary.dll
+D:\Users10\Александр\Desktop\ISM\ISMDraw\Peint\bin\Debug\ShapeLibrary.pdb
+D:\Users10\Александр\Desktop\ISM\ISMDraw\Peint\obj\Debug\Peint.csproj.CopyComplete
